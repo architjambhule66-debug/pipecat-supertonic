@@ -1,0 +1,32 @@
+[project]
+name = "pipecat-supertonic"
+version = "0.1.0"
+description = "Supertonic TTS service integration for Pipecat (Unofficial)"
+readme = "README.md"
+license = "BSD-2-Clause"
+authors = [
+    {name = "Archit Jambhule", email = "jambhulearchit7@gmail.com"}
+]
+requires-python = ">=3.11"
+keywords = ["pipecat", "tts", "supertonic", "voice", "speech-synthesis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    "pipecat-ai[websockets-base]>=1.2,<2",
+    "supertonic>=1.2.1,<2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9,<10",
+    "pytest-asyncio>=1,<2",
+    "ruff>=0.12,<1",
+]
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
