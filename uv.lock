@@ -1148,7 +1148,7 @@ websockets-base = [
 
 [[package]]
 name = "pipecat-supertonic"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "pipecat-ai", extra = ["websockets-base"] },
